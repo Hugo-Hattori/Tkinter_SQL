@@ -22,15 +22,16 @@ In this scenario we're creating the CRUD Operations (Create, Read, Update and De
 
 <p>Create:</p>
 
-
+https://github.com/Hugo-Hattori/Tkinter_SQL/blob/0fe1bfd5d9a25286819e9a783af8ea8ed653d271/Tkinter_SQL.py#L62-L80
 
 <p>Read:</p>
 
-
+https://github.com/Hugo-Hattori/Tkinter_SQL/blob/0fe1bfd5d9a25286819e9a783af8ea8ed653d271/Tkinter_SQL.py#L13-L28
 
 <p>Update:</p>
 
-
+https://github.com/Hugo-Hattori/Tkinter_SQL/blob/0fe1bfd5d9a25286819e9a783af8ea8ed653d271/Tkinter_SQL.py#L45-L60
 
 <p>Delete</p>
 
+https://github.com/Hugo-Hattori/Tkinter_SQL/blob/0fe1bfd5d9a25286819e9a783af8ea8ed653d271/Tkinter_SQL.py#L30-L43
