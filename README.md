@@ -20,15 +20,15 @@ project and transform it into a Python Script using Tkinter.</p>
 <p>This project utilizes pyodbc package, allowing python scripts to execute SQL commands on the database.
 In this scenario we're creating the CRUD Operations (Create, Read, Update and Delete).</p>
 
-<p>Create:</p>
+<p>Create</p>
 
 https://github.com/Hugo-Hattori/Tkinter_SQL/blob/0fe1bfd5d9a25286819e9a783af8ea8ed653d271/Tkinter_SQL.py#L62-L80
 
-<p>Read:</p>
+<p>Read</p>
 
 https://github.com/Hugo-Hattori/Tkinter_SQL/blob/0fe1bfd5d9a25286819e9a783af8ea8ed653d271/Tkinter_SQL.py#L13-L28
 
-<p>Update:</p>
+<p>Update</p>
 
 https://github.com/Hugo-Hattori/Tkinter_SQL/blob/0fe1bfd5d9a25286819e9a783af8ea8ed653d271/Tkinter_SQL.py#L45-L60
 
