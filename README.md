@@ -8,7 +8,9 @@
 
 # Project Concept
 <p>This is an integration project that creates a user-friendly User Interface with Tkinter
-enabling SQL database manipulation.</p>
+enabling SQL database manipulation. In this project's scenario we're creating an Inventory
+Control System capable of adding new inventory items, searching for existing items, 
+updating an item's quantity and deleting an existing item.</p>
 
 ### Tkinter + Proxlight Designer
 <p>The following interface was created using Proxlight Designer and Figma. Proxlight imports Figma's
@@ -18,7 +20,7 @@ project and transform it into a Python Script using Tkinter.</p>
 
 ### Python + SQL
 <p>This project utilizes pyodbc package, allowing python scripts to execute SQL commands on the database.
-In this scenario we're creating the CRUD Operations (Create, Read, Update and Delete).</p>
+In this case we're creating the CRUD Operations (Create, Read, Update and Delete).</p>
 
 <br>
 
