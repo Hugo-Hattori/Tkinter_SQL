@@ -11,7 +11,6 @@ cursor = conexao.cursor()
 
 
 def btn_clicked0(): #procurar insumo
-    # pegar a informação do campo nome_insumo (entry1)
     nome_insumo = entry1.get()
 
     # buscar essa informação do insumo no banco de dados
@@ -19,19 +18,16 @@ def btn_clicked0(): #procurar insumo
                 WHERE nome_insumo = '{nome_insumo}';
                 """
     cursor.execute(comando)
-    # print(cursor.fetchall()) #[(1, 'garrafa', '31/12/2050', 1, 9375.0)]
-    entry0.delete("1.0","end") #limpa a caixa de texto
+    entry0.delete("1.0","end")
 
-    # colocar na caixa de texto (entry0) as informações do insumo no banco de dados
     for linha in cursor.fetchall():
-        texto = f"Item: {linha.nome_insumo}\nQuantidade: {linha.quantidade}\nLote:{linha.lote}\nValidade:{linha.data_validade}" #aqui conseguimos referenciar os nomes das colunas por eles vieram do cursor
+        texto = f"Item: {linha.nome_insumo}\nQuantidade: {linha.quantidade}\nLote:{linha.lote}\nValidade:{linha.data_validade}"
         entry0.insert("1.0", texto)
 
-    entry1.delete("0", "end")  # limpa o campo
+    entry1.delete("0", "end")
     print("Procurar Insumo")
 
 def btn_clicked1(): #deletar insumo
-    # pegar a informação do campo nome_insumo (entry1)
     nome_insumo = entry1.get()
 
     # buscar e deletar a informação do insumo no banco de dados
@@ -43,14 +39,11 @@ def btn_clicked1(): #deletar insumo
 
     # exibir uma mensagem que deletou o insumo no entry 0
     tkinter.messagebox.showinfo(title='Aviso uso excluído', message=f'{nome_insumo} foi excluído do Banco de Dados!')
-    entry1.delete("0", "end") #limpa o campo
+    entry1.delete("0", "end")
     print("Deletar Insumo")
 
 def btn_clicked2(): #registrar uso insumo (consumir um insumo)
-    # pegar a informação do campo nome_insumo (entry1)
     nome_insumo = entry1.get()
-
-    # pegar a informação do campo quantidade (entry4)
     qtde_usada = entry4.get()
 
     # buscar o insumo pelo nome_insumo no banco de dados
@@ -67,7 +60,6 @@ def btn_clicked2(): #registrar uso insumo (consumir um insumo)
     print("Usar Insumo")
 
 def btn_clicked3(): #adicionar insumo
-    # pegar todos os campos
     nome_insumo = entry1.get()
     data_validade = entry2.get()
     lote = entry3.get()
@@ -81,18 +73,11 @@ def btn_clicked3(): #adicionar insumo
     cursor.commit()
     tkinter.messagebox.showinfo(title='Aviso adicionar produto', message='Produto adicionado com sucesso!')
 
-    # limpando os campos
     entry1.delete("0","end")
     entry2.delete("0","end")
     entry3.delete("0","end")
     entry4.delete("0","end")
     print("Adicionar Insumo")
-
-
-# print(entry1.get()) #nome_insumo
-# print(entry2.get()) #data_validade
-# print(entry3.get()) #lote
-# print(entry4.get()) #quantidade
 
 
 window = Tk()
